@@ -3,12 +3,12 @@
 $name = 'Bricx';
 
 // print MYSQL CREDENTIALS
-echo "{$_ENV['MYSQL_HOST']} <br>";
-echo "{$_ENV['MYSQL_USER']} <br>";
-echo "{$_ENV['MYSQL_PASSWORD']} <br>";
-echo "{$_ENV['MYSQL_DATABASE']} <br>";
+echo "{$_ENV['MYSQL_HOST']}<br>";
+echo "{$_ENV['MYSQL_USER']}<br>";
+echo "{$_ENV['MYSQL_PASSWORD']}<br>";
+echo "{$_ENV['MYSQL_DATABASE']}<br>";
 
-echo "<br> Hello World! and {$name} <br><br>";
+echo "<br>Hello World! and {$name}<br><br>";
 
 // mySQL server credentials
 $host = $_ENV['MYSQL_HOST'];
