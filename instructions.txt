@@ -1,9 +1,12 @@
 // Run sh deploy.sh on terminal
 
-// Create image
+// Create image of PHP app
 sudo docker build . -t bricx_carasco/samplephpapp:1.0.0
 
 // Run app
 sudo docker run -d -it -p 30001:80 --name "bricxcarascosamplephpapp" \
 -v "$(pwd)"/www:/var/www/html \
 bricx_carasco/samplephpapp:1.0.0
+
+// Run docker-compose.yml up
+sudo docker-compose up --build
